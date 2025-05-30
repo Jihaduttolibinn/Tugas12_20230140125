@@ -1,0 +1,165 @@
+/* Global reset & font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container & Card */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+.card-header {
+  background: #4f46e5;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+.card-header h1 {
+  font-size: 1.5rem;
+}
+
+/* Form Styles */
+form {
+  padding: 1.5rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label,
+fieldset legend {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Row layout for Nama & NIM */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Radio list */
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-weight: normal;
+}
+fieldset input {
+  margin-right: 0.5rem;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #4338ca;
+}
+.result-card {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.result-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #4f46e5;
+}
+.result-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.result-card td {
+  padding: 0.5rem 0;
+}
+.result-card td.label {
+  font-weight: 600;
+  width: 30%;
+  color: #333;
+}
+.result-card td.value {
+  color: #555;
+}
+/* Tambahkan di bagian atas style.css */
+body {
+  /* ganti path sesuai letak file gambarmu */
+  background-image: url("Assets/Poto2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  /* tetap pertahankan font, layout, dsb */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Card wrapper */
+.card {
+  background: rgba(255, 255, 255, 0.75); /* putih 75% opaque */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+/* Header */
+.card-header {
+  background: rgba(79, 70, 229, 0.85); /* ungu 85% opaque */
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}

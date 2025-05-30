@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pendaftaran OlahRaga</title>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <header class="card-header">
+        <h1>Pendaftaran OlahRaga</h1>
+      </header>
+
+      <form id="pendaftaran-form" novalidate>
+        <!-- Row: Nama & NIM -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim" placeholder="NIM Anda" required />
+          </div>
+        </div>
+
+        <!-- Peminatan (radio) -->
+        <fieldset class="form-group">
+          <legend>Peminatan</legend>
+          <label><input type="radio" name="peminatan" value="Sepak Bola" required /> Sepak Bola</label>
+          <label><input type="radio" name="peminatan" value="Futsal" /> Futsal</label>
+          <label><input type="radio" name="peminatan" value="Basket" /> Basket</label>
+          <label><input type="radio" name="peminatan" value="Volly" /> Volly</label>
+        </fieldset>
+
+        <!-- Angkatan (select) -->
+        <div class="form-group">
+          <label for="angkatan">Angkatan</label>
+          <select id="angkatan" name="angkatan" required>
+            <option value="" disabled selected>Pilih angkatan</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+
+        <!-- Tanggal Daftar -->
+        <div class="form-group">
+          <label for="tanggal">Tanggal</label>
+          <input type="date" id="tanggal" name="tanggal" required />
+        </div>
+
+        <!-- Alamat -->
+        <div class="form-group">
+          <label for="alamat">Alamat</label>
+          <textarea
+            id="alamat"
+            name="alamat"
+            placeholder="Tulis alamatmu di sini"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <!-- setelah form -->
+<div id="result" class="card result-card" hidden>
+  <!-- diisi oleh JS -->
+</div>
+
+</body>
+</html>
